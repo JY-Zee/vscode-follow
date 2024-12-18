@@ -206,7 +206,7 @@ export const getV2EXComments = async (v2ex_id: string | undefined): Promise<Arti
     }
 
     // 请求评论feed
-    const response = await request.get(`${feed.commentFeeds}/${v2ex_id}`);
+    const response = await request.get(`${feed.commentFeeds}/${v2ex_id}`) as string;
 
     // 解析XML数据
     const data = await parseXML(response);

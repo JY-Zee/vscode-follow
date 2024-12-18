@@ -3,7 +3,14 @@
   "displayName": "vscode-follow",
   "description": "",
   "version": "0.0.1",
-  "publisher": "你的发布者ID",
+  "publisher": "JYZee",
+  "keywords": [
+    "摸鱼",
+    "rss",
+    "v2ex",
+    "财联社",
+    "IT之家"
+  ],
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -89,6 +96,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "你的代码仓库地址"
+    "url": "https://github.com/JY-Zee/vscode-follow"
   }
 }
