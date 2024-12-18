@@ -1,0 +1,33 @@
+<?xml
+version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>[评论] follow 更新 rss 的速度不如 feedly - V2EX</title>
+        <link>https://www.v2ex.com/t/1093450</link>
+        <description>RSS - @terrysnake - 你们都说 follow 好，我花了几块钱在闲鱼买了码，试用了一下，发现很多订阅源，更新都没 feedly 快。不知道大家有这个问题吗？</description>
+        <lastBuildDate>Wed, 18 Dec 2024 14:59:46 GMT</lastBuildDate>
+        <generator>morerssplz 0.4</generator>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <title>ROSYSTAIN 说: 是这样的，跟本地的 rss 服务比体感上差了大概有几个小时。……</title>
+            <link>https://www.v2ex.com/t/1093450#r_15651723</link>
+            <description>&lt;div class="reply_content"&gt;是这样的，跟本地的 rss 服务比体感上差了大概有几个小时。应该是为了照顾它自己的 rsshub 端点服务器压力所以刻意降低了抓取频率。相关 issue 上有说过考虑未来提高 rsshub 以外的源的抓取频率。&lt;/div &gt;</description>
+            <author>ROSYSTAIN</author>
+            <guid>https://www.v2ex.com/t/1093450#r_15651723</guid>
+        </item>
+        <item>
+            <title>jay_chiu 说: 虽然我再用，但是依旧不看好。</title>
+            <link>https://www.v2ex.com/t/1093450#r_15649853</link>
+            <description>&lt;div class="reply_content"&gt;虽然我再用，但是依旧不看好。&lt;/div &gt;</description>
+            <author>jay_chiu</author>
+            <guid>https://www.v2ex.com/t/1093450#r_15649853</guid>
+        </item>
+        <item>
+            <title>fyex 说: 例如都订阅 V2EX 最热门主题 订阅的结果是不一样的 fo……</title>
+            <link>https://www.v2ex.com/t/1093450#r_15633863</link>
+            <description>&lt;div class="reply_content"&gt;例如都订阅 V2EX 最热门主题 订阅的结果是不一样的 follow 感觉少点 &lt;/div &gt;</description>
+            <author>fyex</author>
+            <guid>https://www.v2ex.com/t/1093450#r_15633863</guid>
+        </item>
+    </channel>
+</rss>

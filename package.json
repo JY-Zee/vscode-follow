@@ -1,0 +1,94 @@
+{
+  "name": "vscode-follow",
+  "displayName": "vscode-follow",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "你的发布者ID",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-follow.toggleFollow",
+        "title": "Toggle Follow Mode"
+      },
+      {
+        "command": "vscode-follow.clickFeedItem",
+        "title": "刷新",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "vscode-follow.clickFeedItemContent",
+        "title": "Click Feed Item Content"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "follow-explorer",
+          "title": "Follow",
+          "icon": "resources/follow.svg"
+        }
+      ]
+    },
+    "views": {
+      "follow-explorer": [
+        {
+          "id": "followView",
+          "name": "View"
+        }
+      ]
+    },
+    "menus": {
+      "view/item/context": [
+        {
+          "command": "vscode-follow.clickFeedItem",
+          "when": "view == followView",
+          "group": "inline"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@types/xml2js": "^0.4.14",
+    "axios": "^1.7.9",
+    "xml2js": "^0.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "你的代码仓库地址"
+  }
+}
